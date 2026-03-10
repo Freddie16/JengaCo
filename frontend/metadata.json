@@ -1,0 +1,8 @@
+{
+  "name": "JengaHub",
+  "description": "A specialized construction management platform for Kenyan home builders, featuring AI-powered material tracking, milestone escrow, and regulatory compliance monitoring.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
