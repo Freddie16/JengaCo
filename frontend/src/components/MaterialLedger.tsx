@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { analyzeMaterialPhoto } from '../services/groqService';
+import { analyzeMaterialDescription } from '../services/groqService';
 import { MaterialLog, Project } from '../types';
 import { apiGetMaterials, apiCreateMaterial, apiUpdateMaterial, apiDeleteMaterial } from '../services/apiService';
 
@@ -46,7 +46,7 @@ const MaterialLedger: React.FC<MaterialLedgerProps> = ({ project }) => {
     const reader = new FileReader();
     reader.onloadend = async () => {
       const base64String = (reader.result as string).split(',')[1];
-      const result = await analyzeMaterialPhoto(base64String);
+      const result = await analyzeMaterialDescription(base64String);
       setIsAnalyzing(false);
       if (result) {
         try {
