@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { analyzeMaterialPhoto } from '../services/geminiService';
+import { analyzeMaterialPhoto } from '../services/groqService';
 import { MaterialLog, Project } from '../types';
 import { apiGetMaterials, apiCreateMaterial, apiUpdateMaterial, apiDeleteMaterial } from '../services/apiService';
 

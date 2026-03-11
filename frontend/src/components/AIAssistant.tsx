@@ -1,6 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { getConstructionAdvice } from '../services/geminiService';
+import { getConstructionAdvice } from '../services/groqService';
 import { Project } from '../types';
 
 interface AIAssistantProps {
